@@ -6,7 +6,7 @@
         </ng-template>
     </p-toolbar>
     
-    <p-table #dt  [rows]="10" [paginator]="true" [globalFilterFields]="['name','country.name','representative.name','status']" [tableStyle]="{'min-width': '75rem'}"
+    <p-table #dt [value]="ProductData"  [rows]="10" [paginator]="true" [globalFilterFields]="['name','country.name','representative.name','status']" [tableStyle]="{'min-width': '75rem'}"
      [rowHover]="true" dataKey="id"
     currentPageReportTemplate="Showing {first} to {last} of {totalRecords} entries" [showCurrentPageReport]="true">
     <ng-template pTemplate="caption">
@@ -23,7 +23,7 @@
             <th style="width: 4rem">
                 <p-tableHeaderCheckbox></p-tableHeaderCheckbox>
             </th>
-            <th pSortableColumn="name" style="min-width:15rem">Name <p-sortIcon field="name"></p-sortIcon></th>
+            <th pSortableColumn="name" style="min-width:15rem">Name <p-sortIcon field="title"></p-sortIcon></th>
             <th>Image</th>
             <th pSortableColumn="price">Price <p-sortIcon field="price"></p-sortIcon></th>
             <th pSortableColumn="category" style="min-width:10rem">Category <p-sortIcon field="category"></p-sortIcon></th>
@@ -37,7 +37,7 @@
             <td>
                 <p-tableCheckbox [value]="product"></p-tableCheckbox>
             </td>
-            <td>{{product.name}}</td>
+            <td>{{ProductData.title}}</td>
             <td><img [src]="'https://primefaces.org/cdn/primeng/images/demo/product/' + product.image" [alt]="product.name" width="100" class="shadow-4" /></td>
             <td>{{product.price | currency:'USD'}}</td>
             <td>{{product.category}}</td>
@@ -120,7 +120,7 @@
     </p-dialog>
     
     <p-confirmDialog [style]="{width: '450px'}"></p-confirmDialog>
+ <ul *ngFor="let pro of ProductData ">
+    <li>{{pro.title}}</li>
 
-    <ul *ngFor="let li of list">
-        <li>{{li.name}}</li>
-    </ul>
+ </ul>

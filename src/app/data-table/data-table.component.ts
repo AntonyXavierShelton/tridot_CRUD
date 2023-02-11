@@ -1,6 +1,7 @@
 import { Component,OnInit } from '@angular/core';
-import * as Dummy from './Data/Dummy.json';
-import { HttpClient } from "@angular/common/http";
+import { Injectable } from '@angular/core';
+
+
 
 
 @Component({
@@ -8,23 +9,32 @@ import { HttpClient } from "@angular/common/http";
   templateUrl: './data-table.component.html',
   styleUrls: ['./data-table.component.scss']
 })
-export class DataTableComponent {
-
- product:any=(Dummy as any ).default;
- list:any=this.product.data
-
- constructor(private http:HttpClient){}
- 
-
- ngOnInit(){
-  console.log(this.list);
-  this.http.get('/src/app/data-table/Data/Dummy.json').subscribe(res=>{console.log(res)});
+@Injectable()
+export class DataTableComponent implements OnInit {
+  ProductData:any;
   
   
- }
+  user(){
+    fetch('https://fakestoreapi.com/products')
+    .then(res=>res.json())
+    .then(json=>{
+      this.ProductData=json
+      console.log(this.ProductData);
+    });
+    } 
+
+  ngOnInit() {
+  
+    this.user()
+      
+        
+  }
+
+
+   }
   
 
 
   
 
-}
+
