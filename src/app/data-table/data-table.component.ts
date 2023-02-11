@@ -12,20 +12,20 @@ import { Injectable } from '@angular/core';
 @Injectable()
 export class DataTableComponent implements OnInit {
   ProductData:any;
-  
+
   
   user(){
-    fetch('https://fakestoreapi.com/products')
-    .then(res=>res.json())
-    .then(json=>{
-      this.ProductData=json
-      console.log(this.ProductData);
-    });
+    fetch('https://api.escuelajs.co/api/v1/products')
+            .then(res=>res.json())
+            .then(json=>{
+              this.ProductData=json
+              console.log(json)
+            });
     } 
 
-  ngOnInit() {
-  
+  ngOnInit() {  
     this.user()
+      console.log("data");
       
         
   }
