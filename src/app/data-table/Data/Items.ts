@@ -1,12 +1,10 @@
 export interface products{
+    [x: string]: any;
     id?:any,
-    name?:any,
+    title?:any,
+    category?:any,
     country?:any,
     description?:string;
     price?:number;
     quantity?:number;
-    inventoryStatus?:string;
-    category?:string;
-    rating?:number;
-
-}
+    }
