@@ -34,13 +34,12 @@ import { ConfirmationService } from 'primeng/api';
 import { MessageService } from 'primeng/api';
 import { InputTextareaModule } from 'primeng/inputtextarea';
 import { HttpClientModule } from '@angular/common/http';
-import { SearchPipe } from './data-table/Data/search.pipe';
+
 
 @NgModule({
   declarations: [
     AppComponent,
     DataTableComponent,
-    SearchPipe
   ],
   imports: [
     BrowserModule,

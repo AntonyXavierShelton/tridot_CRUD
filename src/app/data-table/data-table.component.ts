@@ -1,10 +1,9 @@
-import { Component, OnInit,ViewChild,Input} from '@angular/core';
+import { Component, OnInit,ViewChild} from '@angular/core';
 import { Injectable } from '@angular/core';
 import { ConfirmationService } from 'primeng/api';
 import { MessageService } from 'primeng/api';
 import { products, category } from './Data/Items';
-import { Table } from 'primeng/table';
-import { SearchPipe } from './Data/search.pipe';
+
 
 @Component({
   selector: 'app-data-table',
@@ -13,6 +12,9 @@ import { SearchPipe } from './Data/search.pipe';
 })
 @Injectable()
 export class DataTableComponent implements OnInit {
+handleInput(arg0: any,arg1: string,arg2: string) {
+throw new Error('Method not implemented.');
+}
   ProductData: products[] = [];
   product!: products;
   selectedProduct: products[] = [];
@@ -20,9 +22,6 @@ export class DataTableComponent implements OnInit {
   Submit?: boolean;
   category!: category;
   loading:boolean=true;
-
-  @ViewChild('dt')
-  table!: Table;
 
   constructor(
     private messageService: MessageService,
@@ -117,7 +116,9 @@ export class DataTableComponent implements OnInit {
 
   ngOnInit() {
     this.FetchData();
-  
- 
+
+    
 }
 }
+
+

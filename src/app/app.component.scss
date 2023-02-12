@@ -105,38 +105,13 @@
   background: none;
   color: #002447;
 }
-:host
-  ::ng-deep
+:host::ng-deep
   button.p-element.p-ripple.ng-tns-c96-2.p-confirm-dialog-accept.p-button.p-component.ng-star-inserted {
   background: #002447;
   font-weight: 800;
   border-radius: 8px;
 }
-// :host ::ng-deep .field-checkbox > label, .field-radiobutton > label {
-//     margin-left: 0.5rem;
-//     line-height: 1;
-//     font-weight: 500;
-// }
-// :host ::ng-deep .p-datatable .p-sortable-column.p-highlight:hover {
-//     background: #002447;
-//     color: #ffffff;
-// }
-// :host ::ng-deep .p-datatable .p-sortable-column:focus {
-//      box-shadow: none;
-//      outline: none;
-// }
-// .p-datatable .p-sortable-column:not(.p-highlight):hover {
-//     background: #002447;
-//     color: #ffffff;
-// }
-// :host ::ng-deep .p-toolbar {
-//     display: flex;
-//     align-items: center;
-//     justify-content: space-between;
-//     flex-wrap: wrap;
-//     margin-top: 50px;
-// }
-// :host ::ng-deep .p-datatable .p-sortable-column:not(.p-highlight):hover {
-//     background: #002447;
-//     color: #ffffff;
-// }
+:host ::ng-deep  .p-element.ng-trigger.ng-trigger-animation.ng-tns-c92-1.p-dialog.p-component.p-dialog-draggable.p-dialog-resizable.ng-star-inserted{
+  width: 30vw;
+}
+
