@@ -53,6 +53,8 @@ In this CRUD Operation I Get Value from JSON format then Assign All The Json dat
 
 For `Save Product` use `PUSH` Array Method It can store the Values in Last Index of Array 
 
+check `Saved Product` in Last page of the table
+
 For Avoid Dupilicate Data  During `Edit Product` I used `POP` for Delete Duplicate Last Index 
 
 `Filters` side  I used `Primeng` filter for filter the data Methods (`Start with` `End With` `Contains` ) 
