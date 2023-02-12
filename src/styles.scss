@@ -106,3 +106,20 @@
     background: #002447;
     color: #ffffff;
 }
+
+:host ::ng-deep button.p-element.p-column-filter-add-button.p-button-text.p-button-sm.ng-tns-c89-4.p-button.p-component {
+    display: none;
+  }
+  :host ::ng-deep .p-column-filter-add-rule.ng-tns-c89-4.ng-star-inserted {
+    display: none;
+  }
+  :host ::ng-deep .p-column-filter-overlay-menu .p-column-filter-buttonbar {
+    padding: 1rem;
+    display: none;
+  }
+  :host ::ng-deep .p-column-filter-buttonbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    display: none;
+  }

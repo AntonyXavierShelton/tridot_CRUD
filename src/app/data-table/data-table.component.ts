@@ -1,9 +1,8 @@
-import { Component, OnInit,ViewChild} from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
 import { Injectable } from '@angular/core';
 import { ConfirmationService } from 'primeng/api';
 import { MessageService } from 'primeng/api';
 import { products, category } from './Data/Items';
-
 
 @Component({
   selector: 'app-data-table',
@@ -12,16 +11,17 @@ import { products, category } from './Data/Items';
 })
 @Injectable()
 export class DataTableComponent implements OnInit {
-handleInput(arg0: any,arg1: string,arg2: string) {
-throw new Error('Method not implemented.');
-}
+  handleInput(arg0: any, arg1: string, arg2: string) {
+    throw new Error('Method not implemented.');
+  }
+  DataUrl: any = 'https://api.escuelajs.co/api/v1/products';
   ProductData: products[] = [];
   product!: products;
   selectedProduct: products[] = [];
   DailogMenu?: boolean;
   Submit?: boolean;
   category!: category;
-  loading:boolean=true;
+  loading: boolean = true;
 
   constructor(
     private messageService: MessageService,
@@ -30,14 +30,13 @@ throw new Error('Method not implemented.');
 
   // For Data Fetch
   FetchData() {
-    fetch('https://api.escuelajs.co/api/v1/products')
+    fetch(this.DataUrl)
       .then((res) => res.json())
       .then((json) => {
         this.ProductData = json;
         console.log(json);
-        this.loading=false;
+        this.loading = false;
       });
-      
   }
 
   // For Add Data
@@ -59,9 +58,6 @@ throw new Error('Method not implemented.');
           (value) => !this.selectedProduct.includes(value)
         );
         console.log(this.selectedProduct);
-        if (true) {
-          // this.selectedProduct=null;
-        }
       },
     });
   }
@@ -116,9 +112,5 @@ throw new Error('Method not implemented.');
 
   ngOnInit() {
     this.FetchData();
-
-    
+  }
 }
-}
-
-

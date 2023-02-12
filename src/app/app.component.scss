@@ -74,9 +74,7 @@
   border-color: #002447;
   background: #002447;
 }
-:host
-  ::ng-deep
-  .p-radiobutton
+:host::ng-deep .p-radiobutton
   .p-radiobutton-box.p-highlight:not(.p-disabled):hover {
   border-color: #002447;
   background: #002447;
@@ -99,19 +97,25 @@
   content: "\e942";
   font-weight: 600;
 }
-:host
-  ::ng-deep
-  button.p-element.p-ripple.ng-tns-c96-2.p-confirm-dialog-reject.p-button.p-component.ng-star-inserted {
+:host::ng-deep button.p-element.p-ripple.ng-tns-c96-2.p-confirm-dialog-reject.p-button.p-component.ng-star-inserted {
   background: none;
   color: #002447;
 }
-:host::ng-deep
-  button.p-element.p-ripple.ng-tns-c96-2.p-confirm-dialog-accept.p-button.p-component.ng-star-inserted {
+:host::ng-deep button.p-element.p-ripple.ng-tns-c96-2.p-confirm-dialog-accept.p-button.p-component.ng-star-inserted {
   background: #002447;
   font-weight: 800;
   border-radius: 8px;
 }
-:host ::ng-deep  .p-element.ng-trigger.ng-trigger-animation.ng-tns-c92-1.p-dialog.p-component.p-dialog-draggable.p-dialog-resizable.ng-star-inserted{
-  width: 30vw;
+:host ::ng-deep button.p-element.p-column-filter-add-button.p-button-text.p-button-sm.ng-tns-c89-4.p-button.p-component {
+  display: none;
 }
-
+:host ::ng-deep .p-column-filter-overlay-menu .p-column-filter-buttonbar {
+  padding: 1rem;
+  display: none;
+}
+:host ::ng-deep .p-column-filter-buttonbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  display: none;
+}
