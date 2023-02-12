@@ -6,6 +6,9 @@ import { AppComponent } from './app.component';
 import { DataTableComponent } from './data-table/data-table.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { RippleModule } from 'primeng/ripple';
+import {ProgressSpinnerModule} from 'primeng/progressspinner';
+
+
 
 
 // For DataTable Component
@@ -31,11 +34,13 @@ import { ConfirmationService } from 'primeng/api';
 import { MessageService } from 'primeng/api';
 import { InputTextareaModule } from 'primeng/inputtextarea';
 import { HttpClientModule } from '@angular/common/http';
+import { SearchPipe } from './data-table/Data/search.pipe';
 
 @NgModule({
   declarations: [
     AppComponent,
-    DataTableComponent
+    DataTableComponent,
+    SearchPipe
   ],
   imports: [
     BrowserModule,
@@ -62,6 +67,7 @@ import { HttpClientModule } from '@angular/common/http';
     ConfirmDialogModule,
     InputTextareaModule,
     HttpClientModule,
+    ProgressSpinnerModule
 
  
 ],

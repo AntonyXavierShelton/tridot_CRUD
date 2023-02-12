@@ -1,2 +1,108 @@
 /* You can add global styles to this file, and also import other style files */
 
+:host ::ng-deep .p-button.p-button-success, .p-buttonset.p-button-success > .p-button, .p-splitbutton.p-button-success > .p-button {
+    color: #ffffff;
+    background: #689F38;
+    border: 1px solid #689F38;
+    font-weight: 900;
+}
+:host ::ng-deep .p-button.p-button-danger, .p-buttonset.p-button-danger > .p-button, .p-splitbutton.p-button-danger > .p-button {
+    color: #ffffff;
+    background: #D32F2F;
+    border: 1px solid #D32F2F;
+    font-weight: 900;
+}
+
+:host ::ng-deep .p-datatable .p-datatable-header  {
+    background: #002447;
+    color: #495057;
+    border: 1px solid #e9ecef;
+    border-width: 1px 0 1px 0;
+    padding: 1rem 1rem;
+    font-weight: 500;
+    color: white;
+}
+:host ::ng-deep .p-datatable .p-datatable-thead > tr > th {
+    text-align: left;
+    padding: 1rem 1rem;
+    border: 1px solid #e9ecef;
+    border-width: 0 0 1px 0;
+    font-weight: 600;
+    color: #ffff;
+    font-weight: bolder;
+    background: #002447;
+    transition: box-shadow 0.2s;
+}
+:host ::ng-deep .title{
+    font-weight: 700;
+}
+:host ::ng-deep button.p-ripple.p-element.p-button-text-save.p-button.p-component.ng-star-inserted {
+    background: #002447;
+    font-weight: 800;
+    border-radius: 8px;
+}
+:host ::ng-deep button.p-ripple.p-element.p-button-text-hide.p-button.p-component.ng-star-inserted {
+    color:#002447 ;
+    background: none;
+    border-color: #002447;
+    font-weight: 800;
+    border-radius: 8px;
+}
+:host ::ng-deep.p-inputtext:enabled:hover {
+    border-color: #2196F3;
+}
+:host ::ng-deep.p-inputtext:enabled:hover {
+    border-color: #002447;
+}
+:host ::ng-deep .p-inputtext:enabled:focus {
+    outline: 0 none;
+    outline-offset: 0;
+    box-shadow: 0 0 0 0.2rem #c7cacc;
+    border-color: #002447;
+}
+:host ::ng-deep .p-radiobutton .p-radiobutton-box.p-highlight {
+    border-color: #002447;
+    background: #002447;
+}
+:host ::ng-deep .p-radiobutton .p-radiobutton-box.p-highlight:not(.p-disabled):hover {
+    border-color: #002447;
+    background: #002447;
+    color: #ffffff;
+}
+:host ::ng-deep .p-dialog .p-dialog-header .p-dialog-title {
+    font-weight: 700;
+    font-size: 1.30rem;
+}
+:host ::ng-deep .field > label {
+    display: inline-block;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+}
+:host ::ng-deep .field-checkbox > label, .field-radiobutton > label {
+    margin-left: 0.5rem;
+    line-height: 1;
+    font-weight: 500;
+}
+:host ::ng-deep .p-datatable .p-sortable-column.p-highlight:hover {
+    background: #002447;
+    color: #ffffff;
+}
+:host ::ng-deep .p-datatable .p-sortable-column:focus {
+     box-shadow: none; 
+     outline: none;
+}
+.p-datatable .p-sortable-column:not(.p-highlight):hover {
+    background: #002447;
+    color: #ffffff;
+}
+:host ::ng-deep .p-toolbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 50px;
+}
+:host ::ng-deep .p-datatable .p-sortable-column:not(.p-highlight):hover {
+    background: #002447;
+    color: #ffffff;
+}
