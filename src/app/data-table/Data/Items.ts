@@ -1,14 +1,12 @@
 export interface products {
-  id?: any;
-  title?: any;
-  images?: any;
   name?: any;
   country?: any;
-  description?: string;
-  price?: number;
-  quantity?: number;
+  description?: any;
+  company?: any;
+  representative?:any;
+  status?: number;
+  activity?:any;
+  id?:any;
 }
 
-export interface category {
-  name?: any;
-}
+
