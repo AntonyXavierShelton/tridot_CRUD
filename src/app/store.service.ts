@@ -19,16 +19,12 @@ export class StoreService {
       return Response
     }))
   }
-  updateproduct(data:any){
-    return this.http.put<any>(" http://localhost:3000/posts",data).pipe(map((Response :any)=>{
+  updateproduct(id:any,data:any){
+    return this.http.put<any>(" http://localhost:3000/posts/"+id,data).pipe(map((Response :any)=>{
         return  Response
     }))
   }
-  deleteproduct(id:any){
-    return this.http.delete<any>(" http://localhost:3000/posts",id).pipe(map((Response :any)=>{
-      return Response
-    }))
-  }
+ 
   
 
 }

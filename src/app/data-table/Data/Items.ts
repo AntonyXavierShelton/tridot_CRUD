@@ -6,7 +6,7 @@ export interface products {
   representative?:any;
   status?: number;
   activity?:any;
-  id?:any;
+  id?:number;
 }
 
 
