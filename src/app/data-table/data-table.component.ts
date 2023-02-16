@@ -54,28 +54,7 @@ export class DataTableComponent implements OnInit {
     this.Submit = false;
   }
 
-  Delete() {
-    this.confirmationService.confirm({
-      message: 'Are you sure you want to delete the selected products?',
-      header: 'Confirm',
-      icon: 'pi pi-exclamation-triangle',
-      accept: () => {
-        if(this.ProductData = this.ProductData.filter(val => !this.selectedProduct.includes(val))){
-        this.httpclient.delete('http://localhost:3000/posts.json').subscribe({
-          next: (Response) => {
-            // alert('deled');
-            this.Fetchdata();
-          },
-          error: (Response) => {
-            // alert('not deled');
-          },
-        });
-        }
-        this.messageService.add({severity:'success', summary: 'Successful', detail: 'Products Deleted', life: 3000});
-        console.log(this.selectedProduct);
-      },
-    });
-  }
+ 
 
   HideDailog() {
     this.DailogMenu = false;

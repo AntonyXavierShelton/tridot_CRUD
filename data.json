@@ -143,31 +143,6 @@
         "image": "onyamalimba.png"
       },
       "balance": 26640
-    },
-    {
-      "id": 1008,
-      "name": "Sage Wieser",
-      "country": {
-        "name": "Egypt",
-        "code": "eg"
-      },
-      "company": "Truhlar And Truhlar Attys",
-      "date": "2018-11-21",
-      "status": "unqualified",
-      "verified": true,
-      "activity": 76,
-      "representative": {
-        "name": "Ivan Magalhaes",
-        "image": "ivanmagalhaes.png"
-      },
-      "balance": 65369
-    },
-    {
-      "name": "shelly",
-      "company": "enterprise resource",
-      "status": "jobless",
-      "activity": "full fime coding",
-      "id": 1010
     }
   ]
 }

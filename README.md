@@ -6,6 +6,8 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
 
+Run `json-server --watch data.json` fro a development Json sever  Resource is `http://localhost:3000/posts` this is one time process
+
 ## Code scaffolding
 
 Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
@@ -63,4 +65,4 @@ For Avoid Dupilicate Data  During `Edit Product` I used `POP` for Delete Duplica
 
 Please wait Until the Loading Screen Complete...
 
-If u want to See Sample screen Check `src\assets\Sample_screev`
+If u want to See Sample screen Check `src\assets\Sample_screen`
