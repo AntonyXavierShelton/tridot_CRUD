@@ -97,11 +97,11 @@ export class DataTableComponent implements OnInit {
     });
     this.store.postproduct(this.product).subscribe({
       next: (Response) => {
-        alert('saved');
+        // alert('saved');
         this.Fetchdata();
       },
       error: (Response) => {
-        alert('not saved');
+        // alert('not saved');
       },
     });
     this.ProductData = [...this.ProductData];
@@ -126,11 +126,11 @@ export class DataTableComponent implements OnInit {
           .delete(' http://localhost:3000/posts/' + product.id)
           .subscribe({
             next: (Response) => {
-              alert('deled');
+              // alert('deled');
               this.Fetchdata();
             },
             error: (Response) => {
-              alert('not deled');
+              // alert('not deled');
             },
           });
       },
